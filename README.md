@@ -41,43 +41,26 @@ graph TD
     B --> C[Exploratory Data Analysis EDA]
     C --> D[Feature Engineering & Scaling]
     D --> E[Model Selection & Training]
-    E --> F[Performance Evaluation]
+    E --> F[Performance Evaluation]  
 ```
 
 
-# 📁 Repository Directory Structure
-CreditWise-Loan-System/
-│
-├── data/
-│   └── loan_data.csv            # Sourced credit & application historical records
-│
-├── notebooks/
-│   └── eda_modeling.ipynb       # Interactive experimental notebook (EDA & Prototyping)
-│
-├── src/
-│   ├── preprocessing.py         # Outlier handling, encoding, and data transformation
-│   ├── model_training.py       # Supervised learning fitting & pipeline creation
-│   └── evaluation.py            # Diagnostic script tracking evaluation scores
-│
-├── requirements.txt             # Project software environment dependencies
-└── README.md                    # System document presentation
 
-🧠 Machine Learning Engine
+
+## 🧠 Machine Learning Engine
 Exploratory Data Analysis (EDA): Visualizing distributions, tracking structural imbalances, and computing correlation matrices using Seaborn and Matplotlib.
 
 Feature Engineering: Handling multi-collinearity, managing skewness, standardizing numeric balances, and utilizing label/one-hot encoding on categorical profiles.
 
 Binary Classification: Training algorithms to predict structural default risks vs. creditworthiness.
 
-The project systematically builds, tunes, and contrasts classic algorithms to identify the ideal risk-mitigator:
+#### The project systematically builds, tunes, and contrasts classic algorithms to identify the ideal risk-mitigator:
 
-Logistic Regression: Used as the linear baseline profile to judge structural coefficients.
+| Logistic Regression: Used as the linear baseline profile to judge structural coefficients.
 
-K-Nearest Neighbors (KNN): Distance-based approach capturing localized applicant trends.
+| K-Nearest Neighbors (KNN): Distance-based approach capturing localized applicant trends.
 
-Naive Bayes: Probabilistic framework highlighting structural indicator distributions.
-
-Because misclassifying a high-risk applicant (False Positive) is far costlier than missing a safe loan, the models are scrutinized beyond basic Accuracy using:
+| Naive Bayes: Probabilistic framework highlighting structural indicator distributions.Because misclassifying a high-risk applicant (False Positive) is far costlier than missing a safe loan, the models are scrutinized beyond basic Accuracy using:
 
 Precision: Minimizing sudden credit defaults.
 
@@ -85,7 +68,7 @@ Recall / Sensitivity: Maximizing potential safe market reach.
 
 F1-Score: Striking a balanced harmonic mean between precision and target recall.
 
-🚀 Getting Started & Installation
+## 🚀 Getting Started & Installation
 Follow these quick commands to spin up the system locally on your environment machine:
 
 1. Clone the Repository
